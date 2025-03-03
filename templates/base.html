@@ -9,4 +9,7 @@
             <p>Vous êtes connecté en tant que {{ request.user }}. <a href="{% url 'logout' %}">Se déconnecter</a></p>
         {% endif %}
     </body>
+    <p><a href="{% url 'home' %}">Home</a></p>
+    <p><a href="{% url 'blog_create' %}">Create a blog</a></p>
+    <p><a href="{% url 'photo_upload' %}">Upload a new photo!</a></p>
 </html>
